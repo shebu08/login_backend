@@ -62,7 +62,7 @@ app.post('/login' , async(req , res)=>{
             }else{
                 // Token generate
                 const token = await userVailed.generateAuthtoken();
-                // console.log(token);
+                console.log(token);
                 
                 // cookies generate
                 res.cookie("usercookiie", token,{
